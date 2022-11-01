@@ -1,0 +1,43 @@
+{
+  "name": "luci-elfrepo",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/build-angular": "^14.2.7",
+    "@angular/cdk": "^14.2.6",
+    "@angular/cli": "^14.2.7",
+    "@angular/common": "^14.2.8",
+    "@angular/compiler-cli": "^14.2.8",
+    "@angular/core": "^14.2.8",
+    "@angular/forms": "^14.2.8",
+    "@angular/material": "^14.2.6",
+    "@angular/platform-browser": "^14.2.8",
+    "@angular/platform-browser-dynamic": "^14.2.8",
+    "@angular/router": "^14.2.8",
+    "@ngneat/elf": "^2.2.0",
+    "@ngneat/elf-cli-ng": "^1.0.0",
+    "@ngneat/elf-devtools": "^1.2.1",
+    "@ngneat/elf-persist-state": "^1.1.6",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.1",
+    "typescript": "~4.8.4"
+  },
+  "elf": {
+    "cli": {
+      "repoTemplate": "class",
+      "plugins": [
+        "@ngneat/elf-cli-ng"
+      ]
+    }
+  }
+}

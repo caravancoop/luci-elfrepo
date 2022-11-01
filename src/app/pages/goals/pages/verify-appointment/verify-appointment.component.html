@@ -1,0 +1,14 @@
+<div class='bg-white rounded-3xl p-10'>
+  <p class='text-2xl font-semibold mb-5 text-center'>Vérifiez si les informations ci-dessous sont correctes</p>
+  <div class='max-w-lg mx-auto p-10 rounded-3xl bg-gray-100 mb-10'>
+    <p class='font-light'>Date de la rencontre : {{ aptRepo.datePicked$ | async | date }}</p>
+  </div>
+  <div class='flex justify-between max-w-lg mx-auto'>
+    <button (click)='aptRepo.updateLastPos("take-appointment")' routerLink='../take-appointment'
+      class='border-2 border-gray-400 px-6 py-1 rounded-full font-medium'>
+      &#x3c; Précédent </button>
+    <button (click)='aptRepo.updateLastPos("advisor")' routerLink='../advisor'
+      class='bg-orange-600 text-white px-6 py-1 rounded-full font-medium'>
+      Suivant ></button>
+  </div>
+</div>

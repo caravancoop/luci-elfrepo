@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+
+<div class='max-w-md bg-white mx-auto mt-10 p-5'>
+  <pre>{{ repo.store | async | json }}</pre>
+  <button (click)='resetStore()'>Reset store</button>
+</div>
